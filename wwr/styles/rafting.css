@@ -23,7 +23,6 @@ body {
     color: var(--accent1-color);
 }
 
-header,
 main,
 footer {
     max-width: 1200px;
@@ -118,13 +117,18 @@ nav a {
     padding: 1rem;
 }
 
-nav a:hover {
-    color: var(--accent1-color);
-    background-color: var(--white);
+header nav a {
+    color: var(--white);
 }
 
 footer {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
     background-color: #3e3e3e;
+    color: var(--white);
+
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 1rem;
@@ -132,6 +136,10 @@ footer {
 }
 
 footer p {
+    color: var(--white);
+}
+
+footer a {
     color: var(--white);
 }
 
@@ -144,6 +152,7 @@ footer p {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     gap: 1rem;
+    align-items: center;
 }
 
 .history h2,
@@ -167,10 +176,6 @@ header img {
 
 .history p {
     margin: 0;
-}
-
-.history {
-    align-items: center;
 }
 
 .adventures figure {
